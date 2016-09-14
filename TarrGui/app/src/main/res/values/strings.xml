@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tarr</string>
+    <string name="title_activity_main">Tarr</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sub">SubActivity</string>
+    <string name="next">TouchProcessingActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="search_movies">Search TA</string>
+
+    <string-array name="tabs">
+        <item>TAB 1</item>
+        <item>TAB 2</item>
+        <item>TAB 3</item>
+        <item>TAB 4</item>
+        <item>TAB 5</item>
+        <item>TAB 6</item>
+    </string-array>
+
+    <string name="title_activity_activity_using_tab_library">SlidingTabLayoutActivity</string>
+    <string name="action_tabs_using_library">SlidingTabLayoutExample</string>
+    <string name="title_activity_vector_test">VectorTestActivity</string>
+    <string name="action_vector_test_activity">VectorTestActivity</string>
+    <string name="error_timeout">Oops! Your Connection Timed Out</string>
+    <string name="error_auth_failure">Oops! RottenTomatoes Says It Doesn\'t Recognize You</string>
+    <string name="error_network">Oops! RottenTomatoes Server Just Messed Up</string>
+    <string name="error_parser">Oops! Data Received Was An Unreadable Mess</string>
+    <string name="title_activity_dynamic_tabs">Dynamic Tabs</string>
+    <string name="add_tab">Add Tab</string>
+    <string name="action_dynamic_tabs_activity">Dynamic Tabs</string>
+    <string name="title_activity_recycler_item_animations">RecyclerItemAnimations
+    </string>
+    <string name="action_recycler_item_animations">RecyclerItemAnimator</string>
+    <string name="action_add">+</string>
+    <string name="action_remove">-</string>
+    <string name="add_item">Add Item</string>
+    <string name="title_activity_activity_calling">Content A</string>
+    <string name="title_activity_activity_called">Content B</string>
+    <string name="action_activity_calling">ContentTransitions</string>
+    <string name="title_activity_activity_shared">Shared A</string>
+    <string name="title_activity_activity_shared_b">Shared B</string>
+    <string name="action_shared_transitions">SharedElementsTransition</string>
+    <string name="sign_out_button_name">Sign out</string>
+    <string name="register_button_name">Register</string>
+    <string name="status_sign_in_required">Sign-in required</string>
+    <string name="status_sign_in_error">Error signing in: %s</string>
+    <string name="status_loading">Loading…</string>
+    <string name="status_signing_in">Signing in with Google+…</string>
+    <string name="status_signed_out">Signed out</string>
+    <string name="status_revoke_access">Revoked access</string>
+    <string name="status_revoke_access_error">Error revoking access: %s</string>
+    <string name="signed_in_as">Signed in as %s</string>
+
+    <!-- Used if there was an error loading the signed in user's name. -->
+    <string name="unknown_person">Unknown</string>
+    <string name="play_services_error">Google Play services is not available.  This application will close.</string>
+    <string name="close">Close</string>
+    <string name="profile_picture">User\'s profile picture.</string>
+
+
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+    <string name="spinner_course">Select Course</string>
+
+</resources>

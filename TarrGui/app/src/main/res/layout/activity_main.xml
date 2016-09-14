@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dip"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dip"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="250dp"
+        android:layout_height="69dp"
+        android:text="@string/sign_out_button_name"
+        android:enabled="false"
+        android:visibility="gone"
+        android:layout_above="@+id/button_prof"
+        android:layout_alignRight="@+id/circles_title"
+        android:layout_alignEnd="@+id/circles_title" />
+
+    <TextView
+        android:id="@+id/sign_in_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status_signed_out"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/sign_in_button"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_alignRight="@+id/sign_in_button"
+        android:layout_alignEnd="@+id/sign_in_button" />
+
+    <TextView
+        android:id="@+id/circles_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/sign_in_status"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_alignRight="@+id/sign_in_status"
+        android:layout_alignEnd="@+id/sign_in_status" />
+    <ImageView
+        android:id="@+id/image_profilepic"
+        android:layout_width="80dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_below="@+id/circles_title"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="253dp"
+        android:layout_height="62dp"
+        android:enabled="false"
+        android:layout_weight="21.38"
+        android:foregroundGravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="250dp"
+        android:layout_height="69dp"
+        android:text="@string/register_button_name"
+        android:enabled="false"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button_prof"
+        android:layout_alignStart="@+id/button_prof" />
+
+    <Button
+        android:id="@+id/button_prof"
+        android:layout_width="250dp"
+        android:layout_height="69dp"
+        android:text="Register as a Professor"
+        android:enabled="false"
+        android:visibility="gone"
+        android:layout_above="@+id/register_button"
+        android:layout_alignLeft="@+id/sign_out_button"
+        android:layout_alignStart="@+id/sign_out_button" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drawer_tabs">
+
+        <item>Search</item>
+        <item>Notifications</item>
+        <item>Requests</item>
+        <item>Profile</item>
+    </string-array>
+</resources>

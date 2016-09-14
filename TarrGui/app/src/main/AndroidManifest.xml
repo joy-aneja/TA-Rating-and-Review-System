@@ -1,0 +1,143 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.joy.tarrgui">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Always required on api < 21, needed to keep a wake lock while your job is running -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Required on api < 21 if you are using setRequiredNetworkType(int) -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Required on all api levels if you are using setPersisted(true) -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission android:name="com.hmkcode.android.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.hmkcode.android.gcm.permission.C2D_MESSAGE" />
+
+
+    <!--android:name="android.support.multidex.MultiDexApplication"-->
+
+    <!--android:name=".materialtest.MyApplication"
+        -->
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <application
+
+        android:name=".materialtest.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.example.joy.tarr.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.example.joy.tarr.CreateProfile"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.joy.tarr.DisplayProfile"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.joy.tarr.SearchProfile"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.joy.tarr.RegisterProfessor"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name="com.example.joy.tarr.EditProfileStudent"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+
+        </activity>
+
+        <activity
+            android:name="com.example.joy.tarrgui.activities.ActivityMain"
+            android:label="@string/title_activity_main" >
+
+
+        </activity>
+        <activity
+            android:name="com.example.joy.tarrgui.activities.ActivityTouchEvent"
+            android:label="@string/title_activity_sub" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.joy.tarrgui.activities.ActivityMain" />
+        </activity>
+        <activity
+            android:name="com.example.joy.tarrgui.activities.ActivitySlidingTabLayout"
+            android:label="@string/title_activity_activity_using_tab_library" >
+        </activity>
+        <activity
+            android:name="com.example.joy.tarrgui.activities.ActivityVectorDrawable"
+            android:label="@string/title_activity_vector_test" >
+        </activity>
+
+
+        <activity
+            android:name="com.example.joy.tarrgui.activities.ActivityDynamicTabs"
+            android:label="Tarr for Professors" >
+        </activity>
+        <activity
+            android:name="com.example.joy.tarrgui.activities.ActivityRecylerAnimators"
+            android:label="@string/title_activity_recycler_item_animations" >
+        </activity>
+        <activity
+            android:name="com.example.joy.tarrgui.activities.ActivityA"
+            android:label="@string/title_activity_activity_calling" >
+        </activity>
+        <activity
+            android:name="com.example.joy.tarrgui.activities.ActivityB"
+            android:label="@string/title_activity_activity_called" >
+        </activity>
+        <activity
+            android:name="com.example.joy.tarrgui.activities.ActivitySharedA"
+            android:label="@string/title_activity_activity_shared">
+        </activity>
+        <activity
+            android:name="com.example.joy.tarrgui.activities.ActivitySharedB"
+            android:label="@string/title_activity_activity_shared_b">
+        </activity>
+
+
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.hmkcode.android.gcm" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".GcmMessageHandler" />
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+
+</manifest>
