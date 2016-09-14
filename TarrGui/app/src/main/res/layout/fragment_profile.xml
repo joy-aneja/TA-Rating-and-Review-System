@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joy.tarrgui.fragments.FragmentProfile">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/profileImage"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/ic_abstract"
+        app:border="false"
+        app:border_color="@android:color/white"
+        app:border_width="4dp"
+        app:shadow="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name"
+        android:id="@+id/profileName"
+        android:layout_below="@+id/profileImage"
+
+        android:layout_centerHorizontal="true"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="email@email.com"
+        android:id="@+id/profileEmail"
+        android:layout_below="@+id/profileName"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="course"
+        android:id="@+id/profileCourse"
+        android:layout_below="@+id/profileEmail"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/profileCourse"
+        android:id="@+id/line"
+        android:width="350dp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileRating"
+        android:layout_below="@+id/line"
+        android:isIndicator="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/profileSkills"
+        android:layout_marginTop="57dp"
+        android:layout_below="@+id/profileRating"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileAccept"
+        android:src="@drawable/ic_check_circle_black_18dp"
+        android:layout_below="@+id/profileRating"
+        android:layout_marginLeft="75dp"
+        android:layout_marginStart="75dp"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilePend"
+        android:src="@drawable/ic_history_black_18dp"
+        android:layout_below="@+id/profileRating"
+        android:layout_alignTop="@+id/profileAccept"
+        android:layout_toRightOf="@+id/profileAccept"
+        android:layout_toEndOf="@+id/profileAccept"
+
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileDec"
+        android:src="@drawable/ic_highlight_remove_black_18dp"
+        android:layout_below="@+id/profileRating"
+        android:layout_alignTop="@+id/profilePend"
+        android:layout_toRightOf="@+id/profilePend"
+        android:layout_toEndOf="@+id/profilePend"
+
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/ptextAccepted"
+        android:layout_alignTop="@+id/profileAccept"
+        android:layout_toRightOf="@+id/profileAccept"
+        android:layout_toEndOf="@+id/profileAccept"
+        android:layout_below="@+id/profileRating"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/ptextPend"
+        android:layout_alignTop="@+id/profilePend"
+        android:layout_toRightOf="@+id/profilePend"
+        android:layout_toEndOf="@+id/profilePend"
+        android:layout_below="@+id/profileRating"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/ptextDec"
+        android:layout_alignTop="@+id/profileDec"
+        android:layout_toRightOf="@+id/profileDec"
+        android:layout_toEndOf="@+id/profileDec"
+        android:layout_below="@+id/profileRating"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"/>
+
+
+
+
+</RelativeLayout>

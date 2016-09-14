@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.joy.tarrgui.activities.ActivityDynamicTabs">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Get TA Details"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sign_out_prof"
+        android:orderInCategory="200"
+        android:title="Sign Out"
+        app:showAsAction="ifRoom" />
+</menu>

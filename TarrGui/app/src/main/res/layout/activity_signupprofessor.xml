@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email ID"
+        android:id="@+id/textView_emailID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText_emailID"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"/>
+</TableRow>
+<TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/textView_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/editText_name" />
+</TableRow>
+<TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department"
+        android:id="@+id/textView_department"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp" />
+
+    <Spinner
+        android:id="@+id/spinner_department"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Course"
+        android:spinnerMode="dropdown"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:prompt="@string/spinner_course" />
+</TableRow>
+<TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp" />
+
+    <Spinner
+        android:id="@+id/spinner_Subject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Subject"
+        android:spinnerMode="dropdown"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:prompt="@string/spinner_course" />
+</TableRow>
+<TableLayout>
+<TableRow>
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_ta"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add TA"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button_addta" />
+</TableRow>
+</TableLayout>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_courseTA"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="15dp"/>
+</TableRow>
+<TableLayout>
+<TableRow>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/button_register"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="100dp"/>
+    </TableRow>
+</TableLayout>
+
+</TableLayout>

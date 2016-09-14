@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="false">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <TableRow>>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email ID"
+                android:id="@+id/text_emailID"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginRight="@dimen/abc_dropdownitem_text_padding_right"
+                android:layout_marginTop="15dp"
+                android:id="@+id/editText_emailID" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:id="@+id/text_name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginRight="@dimen/abc_dropdownitem_text_padding_right"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:id="@+id/editText_name" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:id="@+id/text_course"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp" />
+            <Spinner
+                android:id="@+id/spinner_course"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Course"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginRight="@dimen/abc_dropdownitem_text_padding_right"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:prompt="@string/spinner_course" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branch"
+                android:id="@+id/text_branch"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_branch"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginRight="@dimen/abc_dropdownitem_text_padding_right"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:text="Select Branch" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Institution"
+                android:id="@+id/text_institution"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_institution"
+                android:text="Select Institution"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginRight="@dimen/abc_dropdownitem_text_padding_right"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skills"
+                android:id="@+id/text_skills"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp" />
+
+            <com.example.joy.tarr.MultiSelectionSpinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_skills"
+                android:text="Select Skills"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginRight="@dimen/abc_dropdownitem_text_padding_right"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TA Professor"
+                android:id="@+id/text_taProfessor"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginRight="@dimen/abc_dropdownitem_text_padding_right"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:id="@+id/editText_taProfessor"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TA Subject"
+                android:id="@+id/text_taSubject"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginRight="@dimen/abc_dropdownitem_text_padding_right"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:id="@+id/editText_taSubject" />
+        </TableRow>
+        <TableRow></TableRow>
+        <TableRow></TableRow>
+        <TableLayout>
+            <TableRow>
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:id="@+id/button_register"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp" />
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Clear"
+                    android:id="@+id/button_clear"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+        </TableLayout>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView" />
+
+
+    </TableLayout>
+</ScrollView>
